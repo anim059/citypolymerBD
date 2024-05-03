@@ -1,0 +1,50 @@
+<div class="relative">
+    <!-- Navbar start -->
+    <city-navbar [showDropShadow]="showDropShadow" [showHeadingContent]="showHeadingContent"></city-navbar>
+    <!-- Navbar end -->
+
+    <!-- scroll button start -->
+    <span *ngIf="showScrollBtn" class="animate-bounce fixed bottom-10 right-6 z-10 bg-sky-500 rounded-full w-[40px] h-[40px] flex 
+                                        justify-center items-center cursor-pointer" (click)="scrollToTop()">
+        <mat-icon class="text-white scale-125">keyboard_arrow_up</mat-icon>
+    </span>
+    <!-- scroll button end -->
+
+    <!-- whatsapp button start -->
+    <a href="https://api.whatsapp.com/send?phone=8801775661330">
+        <span class="fixed bottom-24 right-6 z-10 rounded-full w-[45px] h-[45px] flex 
+                                            justify-center items-center cursor-pointer">
+            <img src="../../../../assets/img/whatsapp.svg" />
+        </span>
+    </a>
+    <!-- whatsapp button end -->
+
+    <!-- Hero Start -->
+    <city-hero-section></city-hero-section>
+    <!-- Hero end -->
+    <div class="py-8 px-20">
+        <!-- company introduction Start-->
+        <city-company-introduction></city-company-introduction>
+        <!-- company introduction end-->
+        <!-- category info Start-->
+        <city-category-info></city-category-info>
+        <!-- category info Start-->
+    </div>
+    <!-- Fruits Shop Start-->
+    <city-products-page></city-products-page>
+    <!-- Fruits Shop End-->
+    <!-- Fact Start -->
+    <city-fact-section></city-fact-section>
+    <!-- Fact Start -->
+    <!-- Banner Section Start-->
+    <city-banner></city-banner>
+    <!-- Banner Section end-->
+    <!-- Our-partners Section Start-->
+    <city-our-partners></city-our-partners>
+    <!-- Our-partners Section end-->
+    <!-- Featurs Section Start -->
+    <city-feature-section></city-feature-section>
+    <!-- Featurs Section End -->
+</div>
+<mat-divider class="text-gray-200"></mat-divider>
+<city-footer></city-footer>

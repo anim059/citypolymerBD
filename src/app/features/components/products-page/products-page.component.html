@@ -1,0 +1,29 @@
+<!-- Shop Start-->
+<div class="container-fluid fruite py-8 bg-[#f5f6f7]">
+    <div class="py-8 px-20">
+        <div class="tab-class text-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-12">
+                <div class="col-span-1 lg:col-span-1 text-start">
+                    <h1 class="text-4xl text-stone-600 font-semibold">Our Products</h1>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+                        <div class="lg:col-span-12">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+                                @for (item of pipeProductList | slice:0:8; track $index) {
+                                    <city-product [pipeProduct] = "item"></city-product>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="flex justify-end mt-8">
+            <button class="flex gap-3 p-2 border rounded-full shadow-md bg-white"><span>See More</span><mat-icon>arrow_forward</mat-icon></button>
+        </div> -->
+    </div>
+</div>
+<!-- Shop End-->

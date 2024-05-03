@@ -1,0 +1,107 @@
+<city-navbar [showDropShadow]="false"></city-navbar>
+
+<div class="page-bg-info flex flex-col">
+    <h1 class="text-5xl font-medium text-white">Contact Us</h1>
+    <div class="flex items-center py-4 overflow-x-auto whitespace-nowrap">
+        <a routerLink="/" class="text-gray-600 dark:text-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+            </svg>
+        </a>
+        <span class="mx-5 text-gray-500 dark:text-gray-300">
+            /
+        </span>
+        <a routerLink="contact-us" class="text-gray-600 dark:text-gray-200 hover:underline">
+            Contact Us
+        </a>
+    </div>
+</div>
+
+<div class="container py-16 px-24">
+    <div class="p-10 bg-gray-100 rounded-md">
+        <div class="grid grid-cols-1">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-center mx-auto max-w-md md:max-w-full">
+                    <h1 class="font-bold text-4xl mb-6 text-[#092143]">Get in touch <br /> <span class="text-3xl"> Find Us </span></h1>
+                </div>
+            </div>
+            <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                <div class="rounded border">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.574886861067!2d90.42758261498224!3d23.798147984565812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7b826364245%3A0x28f6b04f0fc1b801!2sCity%20Polymer%20BD!5e0!3m2!1sen!2sbd!4v1685992014510!5m2!1sen!2sbd" width="100%" height="450" style="border: 0px; pointer-events: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-7 gap-5">
+            <div class="col-span-1 flex p-8 rounded-md mb-4 bg-white">
+                <i class="fas fa-map-marker-alt fa-2x text-[#092143] me-4"></i>
+                <div>
+                    <h4 class="text-[#092143] font-medium text-lg">Address</h4>
+                    <p class="text-[#092143] mb-2 text-base">123 Street New York.USA</p>
+                </div>
+            </div>
+
+            <div class="col-span-1 flex p-8 rounded-md mb-4 bg-white">
+                <i class="fas fa-envelope fa-2x  text-[#092143] me-4"></i>
+                <div>
+                    <h4 class="text-[#092143] font-medium text-lg">Mail Us</h4>
+                    <p class="text-[#092143] mb-2 text-base">{{ 'info@example.com' }}</p>
+                </div>
+            </div>
+
+            <div class="col-span-1 flex p-8 rounded-md mb-4 bg-white">
+                <i class="fa fa-phone-alt fa-2x  text-[#092143] me-4"></i>
+                <div>
+                    <h4 class="text-[#092143] font-medium text-lg">Telephone</h4>
+                    <p class="text-[#092143] mb-2 text-base">(+012) 3456 7890</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-8 p-10 bg-[#092143] rounded-md grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 ">
+        <div class="col-span-1 flex p-8 rounded-md mb-4">
+            <div>
+                <h4 class="text-white font-medium text-3xl mb-4">Head Office:</h4>
+                <p class="text-white mb-2 text-base">57-Haji Nur Mohammad Super Market
+                    2nd Floor, Madani Aveneu, 100 fit Road
+                    Notunbazar, Vatara, Baridhara
+                    Dhaka-1212</p>
+            </div>
+        </div>
+
+        <div class="col-span-1 flex p-8 rounded-md mb-4">
+            <div>
+                <h4 class="text-white font-medium text-3xl mb-4">Sales Center: (C.P.B.D):</h4>
+                <p class="text-white mb-2 text-base">1259, Madani Avenue, 100 fit Road
+                    Notunbazar, Vatara, Baridhara
+                    Dhaka-1212</p>
+            </div>
+        </div>
+
+        <div class="col-span-1 flex p-8 rounded-md mb-4">
+            <div>
+                <h4 class="text-white font-medium text-3xl mb-4">Sales Center: (C.I.&S):</h4>
+                <p class="text-white mb-2 text-base">1260, Haji Abdus Sattar Market
+                    Madani Avenue, 100 fit Road, Notunbazar
+                    Vatara, Baridhara, Dhaka-1212</p>
+            </div>
+        </div>
+
+
+        <div class="col-span-1 flex p-8 rounded-md mb-4">
+            <div>
+                <h4 class="text-white font-medium text-3xl mb-4">Ware House:</h4>
+                <p class="text-white mb-2 text-base">House: 02, Road No: 03
+                    Green Bird School Goli, Vatara
+                    Baridhara, Dhaka-1212</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+<!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Gg9epCvdbRL2Pt4lUdMJAiP6MVw60Xo&ehbc=2E312F" width="640" height="480"></iframe> -->
+
+<city-footer></city-footer>

@@ -1,0 +1,17 @@
+<div class="py-14">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-center">
+        @for (item of categoryInfo; track $index) {
+            <div class="col-span-1 md:col-span-1 lg:col-span-1">
+                <div class="bg-white shadow-md rounded-md">
+                    <img decoding="async" class="rounded-t-md w-full h-[200px]" 
+                     [src]="item.srcGif" 
+                     alt="anim-icon1" title="anim-icon1">
+                     <div class="px-4 py-5">
+                         <h3 class="text-black font-semibold">{{item.title}}</h3>
+                         <h3 class="text-stone-700 font-medium mt-1">{{item.desc}}</h3>
+                     </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

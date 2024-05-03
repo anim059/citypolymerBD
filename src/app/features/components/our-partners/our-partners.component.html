@@ -1,0 +1,48 @@
+<div class="container-fluid fruite py-8 bg-[#ffffff]">
+    <div class="py-16 px-20">
+        <div class="tab-class text-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+                <div class="col-span-1 lg:col-span-1 text-start">
+                    <h1 class="text-4xl text-stone-600 font-semibold">Our Partners</h1>
+                </div>
+            </div>
+            <p class="font-medium text-base text-justify mb-5">Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book.It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was popularised in
+                the 1960s</p>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="inline-flex flex-nowrap overflow-x-scroll gap-10 pt-6 pb-11 ">
+                        <div class="flex items-center gap-10 justify-center md:justify-start animate-partner-infinite-scroll">
+                            @for (item of partnersInfo; track $index) {
+                            <div class="w-[250px] px-6 hover:cursor-move">
+                                <div class="w-[250px]">
+                                    <div
+                                        class="container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden partner-card-shadow hover:shadow-2xl transition duration-300">
+                                        <img class="rounded-xl" src="../../../../assets/img/{{item.img}}" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        </div>
+                        <div class="flex gap-10 items-center justify-center md:justify-start animate-partner-infinite-scroll" aria-hidden="true">
+                            @for (item of partnersInfo; track $index) {
+                            <div class="w-[250px] px-6 hover:cursor-move">
+                                <div class="w-[250px]">
+                                    <div
+                                        class="container mx-auto p-9 bg-white max-w-sm rounded-2xl overflow-hidden partner-card-shadow hover:shadow-2xl transition duration-300">
+                                        <img class="rounded-xl" src="../../../../assets/img/{{item.img}}" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

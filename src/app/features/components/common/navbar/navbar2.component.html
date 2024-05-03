@@ -1,0 +1,76 @@
+<div
+    class="w-full flex items-center justify-between flex-wrap bg-white lg:px-12 shadow border-solid border-t-2 border-blue-700">
+    <div>
+        <h2 class=" py-6 text-3xl text-blue-600 font-semibold">City Polymar BD</h2>
+    </div>
+    <nav *ngIf="!isMobileSize" class=" font-semibold text-lg">
+        <ul class="flex items-center">
+            <li
+                class="px-4 py-6 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer active">
+                <a href="">Home</a>
+            </li>
+            <li
+                class="px-4 py-6 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer">
+                <a href="">Our Concern</a>
+            </li>
+            <li class="relative parent py-6 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100
+             hover:text-blue-500 duration-200 cursor-pointer">
+                <a class="flex md:inline-flex items-center">
+                    <span> Company Profile </span>
+                    <mat-icon>keyboard_arrow_down</mat-icon>
+                </a>
+                <ul
+                    class="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
+                    <li>
+                        <a href="#" class="flex px-4 py-3 text-sm text-black hover:bg-gray-50">
+                            City Iron & steel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex px-4 py-3 text-sm text-black hover:bg-gray-50">
+                            City Traders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex px-4 py-3 text-sm text-black hover:bg-gray-50">
+                            City Developer
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li
+                class="px-4 py-6 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer">
+                <a href="">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <mat-icon class="text-blue-500 scale-110 hover:scale-125 duration-300 ">shopping_basket</mat-icon>
+    </div>
+</div>
+
+
+
+
+
+<!-- hero part -->
+<div id="carouselId" class="carousel slide relative" data-bs-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active rounded">
+            <img src="../../../../assets/img/hero-img-1.png" class="w-full h-full bg-secondary rounded" alt="First slide">
+            <a href="#" class="btn px-4 py-2 text-white rounded">Fruits</a>
+        </div>
+        <div class="carousel-item rounded">
+            <img src="../../../../assets/img/hero-img-2.png" class="w-full h-full rounded" alt="Second slide">
+            <a href="#" class="btn px-4 py-2 text-white rounded">Vegetables</a>
+        </div>
+    </div>
+    <button class="carousel-control-prev absolute top-1/2 -translate-y-1/2 left-0" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next absolute top-1/2 -translate-y-1/2 right-0" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

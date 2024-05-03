@@ -1,0 +1,54 @@
+.dropdown-menu {
+    display: none;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.dropdown-open {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 30s linear infinite;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .parent:hover .child {
+        opacity: 1;
+        height: auto;
+        overflow: none;
+        transform: translateY(2px);
+    }
+
+    .child {
+        width: 200px;
+        opacity: 0;
+        height: 0;
+        margin: 0px auto;
+        overflow: hidden;
+        transform: translateY(-30%);
+    }
+}

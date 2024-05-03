@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+// :root {
+//     --primary-color: #007bff;
+//     --secondary-color: #6c757d;
+
+// }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+td,
+th {
+    font-family: inter;
+}
+
+
+.page-bg-info{
+    background: 
+    linear-gradient(rgb(56 56 87 / 87%) 0 0),
+    url("https://assets.codepen.io/2585/sean-pollock-PhYq704ffdA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// p {
+//     /* Define paragraph styles */
+// }
+
