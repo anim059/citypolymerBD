@@ -120,8 +120,13 @@ export class ProductStorageService {
   }
 
   getProductByCode(code : string): Product | undefined{
-    let product = this.productList.find((ele)=> ele.code === code);
+    let product = this.productList.find((ele)=> ele.code.toLowerCase() === code.toLowerCase());
     return product;
+  }
+
+  getProductByAttributes(attributeName: string, value: string): Product[]{
+    let products = this.productList.filter((ele: any)=> ele[attributeName].toLowerCase().indexOf(value.toLowerCase()) != -1);
+    return products;
   }
 
 }

@@ -22,6 +22,7 @@ import { ProductDetailsComponent } from './features/components/product-details/p
 import { ProductListInfoPageComponent } from './features/components/product-list-info-page/product-list-info-page.component';
 import { ProductsPageComponent } from './features/components/products-page/products-page.component';
 import { SharedModule } from './shared/shared.module';
+import { AddToCartItemsComponent } from './features/components/add-to-cart-items/add-to-cart-items.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { SharedModule } from './shared/shared.module';
     CompanyProfileComponent,
     ProductDetailsComponent,
     OurPartnersComponent,
-    ProductListInfoPageComponent
+    ProductListInfoPageComponent,
+    AddToCartItemsComponent
   ],
   imports: [
     BrowserModule,

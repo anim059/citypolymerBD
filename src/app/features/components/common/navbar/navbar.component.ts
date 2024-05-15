@@ -1,6 +1,9 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from '@angular/core';
 
+import { AddToCartItemsComponent } from '../../add-to-cart-items/add-to-cart-items.component';
+import { AddToCartService } from '../../../../core/service/add-to-cart.service';
 import { BreakpointObserver } from '@angular/cdk/layout';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 @Component({
@@ -21,7 +24,10 @@ export class NavbarComponent {
 
   showDropdownMenu : boolean = false;
 
-  constructor(private observer: BreakpointObserver) { }
+  addToCartProductCount : number = 0;
+
+  constructor(private observer: BreakpointObserver, public dialog: MatDialog,
+    private addToCartService : AddToCartService, private cd : ChangeDetectorRef) { }
 
   ngOnInit(): void {    
     this.observer.observe(['(max-width: 800px)']).subscribe((screenSize) => {
@@ -29,6 +35,13 @@ export class NavbarComponent {
         this.isMobileSize = true;
       } else {
         this.isMobileSize = false;
+      }
+    })
+    this.addToCartService.isNewProductAdded$.subscribe((value)=>{
+      if(value){
+        let productList = this.addToCartService.getAddToCartProduct();
+        this.addToCartProductCount = productList.length
+        this.cd.markForCheck();
       }
     })
   }
@@ -45,6 +58,17 @@ export class NavbarComponent {
     for (var j = 0; j < menu.length; j++) {
       menu[j].classList.toggle('hidden');
     }
+  }
+
+  openDialog(): void{
+    let dialogRef = this.dialog.open(AddToCartItemsComponent, {
+      width: '800px',
+      maxHeight: '600px',
+      autoFocus: false
+    });
+    dialogRef.afterClosed().subscribe(()=>{
+      
+    })
   }
 
 }

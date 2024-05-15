@@ -1,17 +1,29 @@
-import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-import {MatIconModule} from '@angular/material/icon'
-import {MatDividerModule} from '@angular/material/divider';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CommonModule } from '@angular/common';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatDialogModule} from '@angular/material/dialog'
+import {MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon'
+import {MatInputModule} from '@angular/material/input'
+import {MatSelectModule} from '@angular/material/select';
+import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatIconModule,
     MatDividerModule,
-    CarouselModule
+    CarouselModule,
+    MatDialogModule,
+    MatSelectModule,
+    MatInputModule
   ],
-  exports:[MatIconModule, MatDividerModule, CarouselModule]
+  exports:[MatIconModule, MatDividerModule, CarouselModule, MatBadgeModule, MatDialogModule, MatSelectModule, MatInputModule, 
+    FormsModule, ReactiveFormsModule]
 })
 export class SharedModule { }
