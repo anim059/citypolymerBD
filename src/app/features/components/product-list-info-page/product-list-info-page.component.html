@@ -45,7 +45,7 @@
                 <div class="lg:col-span-12">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
                         @for (item of pipeProductList | slice:0:8; track $index) {
-                        <div class="rounded relative">
+                        <div class="rounded relative cursor-pointer" [routerLink]="['/product-detail',item?.code]" matTooltip="Click to view detail">
                             <div class="">
                                 <img src="../../../../assets/img/{{item?.img}}"
                                     class="h-[250px] bg-cover rounded-t cursor-pointer w-full" alt="">

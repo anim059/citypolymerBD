@@ -8,6 +8,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon'
 import {MatInputModule} from '@angular/material/input'
 import {MatSelectModule} from '@angular/material/select';
+import {MatTooltipModule} from '@angular/material/tooltip'
 import { NgModule } from '@angular/core';
 
 @NgModule({
@@ -24,6 +25,6 @@ import { NgModule } from '@angular/core';
     MatInputModule
   ],
   exports:[MatIconModule, MatDividerModule, CarouselModule, MatBadgeModule, MatDialogModule, MatSelectModule, MatInputModule, 
-    FormsModule, ReactiveFormsModule]
+    FormsModule, ReactiveFormsModule, MatTooltipModule]
 })
 export class SharedModule { }

@@ -8,20 +8,39 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class OurPartnersComponent {
 
-  partnersInfo : any[] = [
+  partnersInfo: any[] = [
     {
-      img : 'A1-Logo.png'
+      img: 'A1-Logo.png'
     },
     {
-      img : 'A1-Logo.png'
-    },{
-      img : 'A1-Logo.png'
-    },{
-      img : 'A1-Logo.png'
-    },{
-      img : 'A1-Logo.png'
-    },{
-      img : 'A1-Logo.png'
+      img: 'ajay.png'
+    },
+    {
+      img: 'astra_pipe.png'
+    },
+    {
+      img: 'brb.jpg'
+    },
+    {
+      img: 'charu.png'
+    },
+    {
+      img: 'npoly.png'
+    },
+    {
+      img: 'pedrollo.png'
+    },
+    {
+      img: 'rak.png'
+    },
+    {
+      img: 'rfl.jpg'
+    },
+    {
+      img: 'rosa.png'
+    },
+    {
+      img: 'water_tec.png'
     }
   ]
 
